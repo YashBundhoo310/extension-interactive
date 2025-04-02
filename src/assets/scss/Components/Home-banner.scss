@@ -1,0 +1,53 @@
+/* src/Banner.scss */
+.banner {
+  height: 100vh; // Full height of the viewport
+  display: flex;
+  justify-content: center; // Center content vertically
+  align-items: center; // Center content horizontally
+  background-size: cover; // Cover the entire area
+  background-position: center; // Center the image
+  color: white;
+  text-align: center;
+  position: relative; // Position relative for overlay
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); // Dark overlay for better text visibility
+    z-index: 1; // Place overlay above the image
+  }
+
+  .banner-content {
+    position: relative; // Position relative to place above the overlay
+    z-index: 2; // Place content above the overlay
+
+    h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    p {
+      font-size: 1.5rem;
+      margin: 10px 0;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      color: white;
+      background-color: #ff6347; // Button color
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: #ff4500; // Darker shade on hover
+      }
+    }
+  }
+}

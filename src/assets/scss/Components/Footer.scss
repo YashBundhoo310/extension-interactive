@@ -1,0 +1,50 @@
+/* src/Footer.scss */
+.footer {
+  background-color: #333; // Dark background color
+  color: white; // Text color
+  padding: 20px; // Padding around the footer
+  text-align: center; // Center text
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between; // Space out social links and legal mentions
+    align-items: center; // Center items vertically
+    margin-bottom: 10px; // Space between content and copyright
+
+    .social-links {
+      display: flex; // Use flexbox for social links
+      align-items: center; // Center icons vertically
+      gap: 30px;
+
+      a {
+        margin: 0 10px; // Space between links
+        color: white; // Icon color
+        font-size: 24px; // Set size for icons
+        transition: color 0.3s; // Transition for hover effect
+
+        &:hover {
+          color: #ff6347; // Change color on hover
+        }
+      }
+    }
+
+    .legal-mentions {
+      a {
+        color: white; // Link color
+        margin: 0 10px; // Space between links
+        text-decoration: none; // Remove underline
+        transition: color 0.3s; // Transition for hover effect
+
+        &:hover {
+          color: #ff6347; // Change color on hover
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    p {
+      margin: 0; // Remove default margin
+    }
+  }
+}

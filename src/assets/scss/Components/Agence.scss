@@ -1,0 +1,117 @@
+/* src/Services.scss */
+.container {
+  max-width: 1200px; // Set a max width for the container
+  margin: 0 auto; // Center the container
+  padding: 4rem 1rem; // Add padding
+}
+
+.services-grid {
+  display: grid; // Use grid layout
+  grid-template-columns: repeat(1, 1fr); // One column by default
+  gap: 2rem; // Space between items
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr); // Three columns on larger screens
+  }
+}
+
+.service-card {
+  display: flex; // Use flexbox for layout
+  flex-direction: column; // Stack items vertically
+  align-items: center; // Center items horizontally
+  background-color: #2d3748; // Dark gray background (bg-gray-800)
+  padding: 1.5rem; // Padding inside the card
+  border-radius: 0.5rem; // Rounded corners
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Shadow effect
+
+  .icon-container {
+    background-color: #63b3ed; // Light blue background (bg-blue-300)
+    border-radius: 50%; // Circular shape
+    width: 4rem; // Width of the icon container
+    height: 4rem; // Height of the icon container
+    display: flex; // Use flexbox for centering
+    align-items: center; // Center items vertically
+    justify-content: center; // Center items horizontally
+  }
+
+  i {
+    color: white; // White icon color
+    font-size: 1.5rem; // Icon size
+  }
+
+  .service-title {
+    margin-top: 1rem; // Space above title
+    font-size: 1.25rem; // Font size for title
+    font-weight: 600; // Bold font
+    color: white; // White text color
+  }
+
+  .service-description {
+    color: #a0aec0; // Light gray color for description
+    margin-top: 0.5rem; // Space above description
+    font-size: 0.875rem; // Font size for description
+  }
+}
+
+.join-us {
+  margin-top: 2rem; // Space above the join us link
+  text-align: center; // Center the link
+
+  .join-link {
+    color: #a0aec0; // Light gray color for link
+    font-size: 1.125rem; // Font size for link
+    transition: color 0.3s; // Transition for hover effect
+
+    &:hover {
+      color: #ecc94b; // Change color on hover (yellow-500)
+    }
+  }
+}
+
+/* src/LogoMarquee.scss */
+.logo-marquee {
+  overflow: hidden; // Hide overflow
+  padding: 1rem 0; // Vertical padding
+  max-width: 800px; // Set a max width for the marquee
+  margin: 0 auto; // Center the marquee
+
+  .scrolling {
+    display: flex; // Use flexbox for horizontal scrolling
+    animation: scroll 20s linear infinite; // Animation for scrolling
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(100%); // Start from the right
+      }
+      100% {
+        transform: translateX(-100%); // End at the left
+      }
+    }
+  }
+
+  .logo-item {
+    display: flex; // Use flexbox for logo items
+    align-items: center; // Center items vertically
+    margin-right: 2rem; // Space between items
+
+    .logo-image {
+      margin-right: 0.5rem; // Space between image and text
+    }
+
+    .logo-text {
+      color: #a0aec0; // Gray color for text
+      font-size: 1.125rem; // Font size for text
+    }
+
+    .logo-subtext {
+      color: #a0aec0; // Gray color for subtext
+      font-size: 0.875rem; // Font size for subtext
+    }
+  }
+}
+
+.realisation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,50 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Ensure the header is above other content */
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.header nav ul li {
+  margin-left: 20px;
+}
+
+.header nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.header nav ul li a:hover {
+  color: #ff6347; /* Change color on hover */
+}
+
+/* Add some padding to the body to prevent content from being hidden behind the header */
+body {
+  padding-top: 60px; /* Adjust based on header height */
+}
+
+.logo {
+  img {
+    width: 75%;
+  }
+}

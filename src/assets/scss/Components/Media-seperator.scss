@@ -1,0 +1,11 @@
+/* src/MediaSeparator.scss */
+.media-separator {
+  height: 100vh; // Set height to 100vh
+  background-size: cover; // Cover the entire area
+  background-position: center; // Center the image
+  display: flex; // Use flexbox for centering
+  align-items: center; // Center items vertically
+  justify-content: center; // Center items horizontally
+  color: white; // Text color
+  text-align: center; // Center text
+}

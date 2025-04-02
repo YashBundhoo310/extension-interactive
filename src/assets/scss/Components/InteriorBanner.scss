@@ -1,0 +1,43 @@
+/* src/InteriorBanner.scss */
+.interior-banner {
+  position: relative; // Position relative for absolute positioning of content
+  height: 70vh; // Set height to 70vh
+  margin: 0 auto; // Center the banner
+  background-color: #e5e7eb; // Light gray background (bg-gray-200)
+
+  .banner-image {
+    width: 100%; // Full width
+    height: 100%; // Full height
+    object-fit: cover; // Cover the area
+  }
+
+  .banner-content {
+    position: absolute; // Position absolute to overlay on the image
+    bottom: 0; // Align to the bottom
+    left: 0; // Align to the left
+    background-color: rgba(0, 0, 0, 0.75); // Black background with opacity
+    color: white; // White text color
+    text-align: left; // Align text to the left
+    padding: 1rem; // Padding around the content
+
+    .title {
+      display: inline-block; // Inline block for title
+      font-size: 2.25rem; // Text size (text-4xl in Tailwind)
+      font-weight: bold; // Bold font
+    }
+
+    .subtitle {
+      display: inline-block; // Inline block for subtitle
+      margin-top: 0.5rem; // Margin above subtitle
+      font-size: 0.875rem; // Text size (text-sm in Tailwind)
+    }
+
+    .breadcrumb {
+      margin-top: 0.5rem; // Margin above breadcrumb
+      font-size: 0.875rem; // Text size (text-sm in Tailwind)
+    }
+    a {
+      color: white;
+    }
+  }
+}
